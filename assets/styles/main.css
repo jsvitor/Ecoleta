@@ -6,6 +6,8 @@
 * {
   margin: 0;
   padding: 0;
+  /*  para que o preenchimento fique dentro da caixa */
+  box-sizing: border-box;
 }
 
 html {

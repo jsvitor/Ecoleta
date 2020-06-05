@@ -4,7 +4,7 @@
   "description": "<div>\r   <img src=\"https://img.shields.io/github/repo-size/jszvitor/JavaScript-RocketSeat-Course\">\r   <a href=\"https://jszvitor.github.io\">\r     <img src=\"https://img.shields.io/badge/made%20by-jszvitor-brightgreen\"/>\r   </a>\r   <a href=\"https://github.com/jszvitor\">\r     <img alt=\"Made by jszvitor\" src=\"https://img.shields.io/github/followers/jszvitor?color=%2363FFA1&style=social\">\r   </a>\r </div>",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "homepage": "https://github.com/jszvitor/Ecoleta#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }

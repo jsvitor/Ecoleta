@@ -3,21 +3,31 @@ const server = express()
 
 
 
-// public dir configuration
+// public folder configuration
 server.use(express.static("public"))
+
+
+
+// using engine template
+const nunjucks = require('nunjucks')
+nunjucks.configure("src/views", {
+  express: server,
+  noCache: true
+})
+
 
 // ways configuration
 // HOME
 server.get("/", (request, response) => {
-  response.sendFile(__dirname + "/views/index.html")
+  return response.render("index.html", { title: `Uau! que maravilha de nunjucks, baby!!!`})
 })
 // CREATE POINT
 server.get("/create-point", (request, response) => {
-  response.sendFile(__dirname + "/views/create-point.html")
+  return response.render("create-point.html")
 })
 // SEARCH RESULTS
 server.get("/search-results", (request, response) => {
-  response.sendFile(__dirname + "/views/search-results.html")
+  return response.render("search-results.html")
 })
 
 // turn on the server

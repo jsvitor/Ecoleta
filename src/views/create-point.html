@@ -8,6 +8,7 @@
 
 {% block styles %}
   <link rel="stylesheet" href="assets/styles/create-point.css">
+  <link rel="stylesheet" href="assets/styles/modal.css">
 {% endblock styles %}
 
 
@@ -15,7 +16,7 @@
   {% include "partials/page-header.html" %}
 
 
-  <form action="">
+  <form action="/savepoint" method="POST">
     <h1>Cadastro do ponto de coleta</h1>
 
     <fieldset>
@@ -32,7 +33,7 @@
           <label for="name">Imagem da entidade</label>
           <input 
             type="url"
-            name="Image"
+            name="image"
             placeholder="http://"
             required
           >
@@ -74,27 +75,27 @@
         <span>Selecione um ou mais itens abaixo</span>
       </legend>
       <div class="items-grid">
-        <li data-id="1">
+        <li data-id="Lâmpadas">
           <img src="./assets/icons/lampadas.svg" alt="Lâmpadas.">
           <span>Lâmpadas</span>
         </li>
-        <li data-id="2">
+        <li data-id="Pilhas e baterias">
           <img src="./assets/icons/baterias.svg" alt="Pilhas e baterias.">
           <span>Pilhas e baterias</span>
         </li>
-        <li data-id="3">
+        <li data-id="Papeis e papelão">
           <img src="./assets/icons/papeis-papelao.svg" alt="Papeis e papelão.">
           <span>Papeis e papelão.</span>
         </li>
-        <li data-id="4">
+        <li data-id="Resíduos eletrônicos">
           <img src="./assets/icons/eletronicos.svg" alt="Resíduos eletrônicos.">
           <span>Resíduos eletrônicos</span>
         </li>
-        <li data-id="5">
+        <li data-id="Resíduos orgânicos">
           <img src="./assets/icons/organicos.svg" alt="Resíduos organicos.">
           <span>Resíduos orgânicos</span>
         </li>
-        <li data-id="6">
+        <li data-id="Óleo de cozinha">
           <img src="./assets/icons/oleo.svg" alt="Óleo de cozinha">
           <span>Óleo de cozinha</span>
         </li>
@@ -104,8 +105,16 @@
 
     <button type="submit">Cadastrar ponto de coleta</button>
   </form>
-{% endblock content %}
 
+  
+  {% endblock content %}
+
+  {% block modal %}
+    {% if saved %}
+      {% include "partials/point-created.html" %}
+    {% endif %}
+  {% endblock modal %}
+  
 {% block scripts %}
   <script src="./scripts/create-point.js"></script>
 {% endblock scripts %}

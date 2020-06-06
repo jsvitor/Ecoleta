@@ -1,6 +1,6 @@
 const express = require("express")
 const server = express()
-
+const db = require("./database/db")
 
 
 // public folder configuration
@@ -27,7 +27,15 @@ server.get("/create-point", (request, response) => {
 })
 // SEARCH RESULTS
 server.get("/search-results", (request, response) => {
-  return response.render("search-results.html")
+  // take the date from db
+  db.all(`SELECT * FROM places`, function(err, rows) {
+    if(err) console.log(err)
+
+    const total = rows.length
+
+    return response.render("search-results.html", { places: rows, total })
+  })
+
 })
 
 // turn on the server

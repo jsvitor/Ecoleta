@@ -8,7 +8,7 @@ server.use(express.static("public"))
 
 
 
-// using engine template
+// using template engine
 const nunjucks = require('nunjucks')
 nunjucks.configure("src/views", {
   express: server,

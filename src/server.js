@@ -75,8 +75,17 @@ server.post("/savepoint", (request, response) => {
 
 // SEARCH RESULTS
 server.get("/search-results", (request, response) => {
+
+  const search = request.query.search
+
+  if(search == "") {
+    // empty search
+    return response.render("search-results.html", { tatal: 0 })
+  }
+
+
   // take the date from db
-  db.all(`SELECT * FROM places`, function(err, rows) {
+  db.all(`SELECT * FROM places WHERE city LIKE '%${search}%'`, function(err, rows) {
     if(err) console.log(err)
 
     const total = rows.length

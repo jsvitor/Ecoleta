@@ -18,7 +18,15 @@
 </h1>
 
 
-### [Ecoleta figma file](https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta)## File Structure
+## [Prototype of this project](https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta)
+<h1 align="center">
+  <img
+    alt="JavaScript logo"
+    src="./readmeAssets/Prototype.png"
+  />
+</h1>
+
+## File Structure
 Within the download you'll find the following directories and files:
 
 ```

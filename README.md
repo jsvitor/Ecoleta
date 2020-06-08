@@ -79,3 +79,10 @@ Ecoleta/
 ├── package.json
 └── README.md
 ```
+
+
+## Quick start
+
+- Clone the repo: `git clone https://github.com/jszvitor/Ecoleta.git`.
+- `npm install`
+- `npm start`

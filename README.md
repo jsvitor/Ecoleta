@@ -18,4 +18,56 @@
 </h1>
 
 
-### [Ecoleta figma file](https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta)
+### [Ecoleta figma file](https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta)## File Structure
+Within the download you'll find the following directories and files:
+
+```
+Ecoleta/
+├── public
+│   ├── assets
+│   │   ├── icons
+│   │   │   ├── arrow-left.svg
+│   │   │   ├── baterias.svg
+│   │   │   ├── check.svg
+│   │   │   ├── eletronicos.svg
+│   │   │   ├── home-background.svg
+│   │   │   ├── lampadas.svg
+│   │   │   ├── log-in.svg
+│   │   │   ├── logo.svg
+│   │   │   ├── oleo.svg
+│   │   │   ├── organicos.svg
+│   │   │   ├── papeis-papelao.svg
+│   │   │   ├── search.svg
+│   │   │   └── x.svg
+│   │   └── styles
+│   │       ├── create-point.css
+│   │       ├── home.css
+│   │       ├── main.css
+│   │       ├── modal.css
+│   │       ├── responsive.css
+│   │       └── search-results.css
+│   └── scripts
+│       ├── create-point.js
+│       ├── index.js
+│       └── intro.js
+├── readmeAssets
+│   └── Home.png
+├── src
+│   ├── database
+│   │   ├── database.db
+│   │   └── db.js
+│   ├── views
+│   │   ├── partials
+│   │   │   ├── motal.html
+│   │   │   ├── page-header.html
+│   │   │   └── point-created.html
+│   │   ├── create-point.html
+│   │   ├── index.html
+│   │   ├── layout.html
+│   │   └── search-results.html
+│   └── server.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
+```

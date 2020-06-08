@@ -10,21 +10,13 @@
   </a>
 </div>
 
-<h1 align="center">
-  <img
-    alt="JavaScript logo"
-    src="./readmeAssets/Home.png"
-  />
-</h1>
+![Product image](https://raw.githubusercontent.com/jszvitor/public-assets/master/Ecoleta/Home.png)
 
 
 ## [Prototype of this project](https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta)
-<h1 align="center">
-  <img
-    alt="JavaScript logo"
-    src="./readmeAssets/Prototype.png"
-  />
-</h1>
+
+![prototype image](https://raw.githubusercontent.com/jszvitor/public-assets/master/Ecoleta/Prototype.png)
+
 
 ## File Structure
 Within the download you'll find the following directories and files:

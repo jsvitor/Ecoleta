@@ -1,7 +1,7 @@
 # [Ecoleta - Next Level Week #1](https://skylab.rocketseat.com.br) [![Rocketseat](https://img.shields.io/badge/Rocketseat-%2304D361)](https://rocketseat.com.br)
 
 <div>
-  <img src="https://img.shields.io/github/repo-size/jszvitor/JavaScript-RocketSeat-Course">
+  <img src="https://img.shields.io/github/repo-size/jszvitor/Ecoleta">
   <a href="https://jszvitor.github.io">
     <img src="https://img.shields.io/badge/made%20by-jszvitor-brightgreen"/>
   </a>
